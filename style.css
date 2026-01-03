@@ -1,0 +1,685 @@
+/* =====================
+   RESET & BASE
+===================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background:white;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Battambang', 'Khmer OS Battambang', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar{
+    height: 80px;
+    background: rgba(0,0,0,0.85);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #938f8f;
+}
+
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar-brand img{
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    margin-left: 32px;
+    border-radius: 50%;
+}
+
+.logo-text{
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #ff2c2c;
+
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-nav li{
+    position: relative;
+}
+
+.navbar-nav a{
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav a:hover{
+    color: #ff2c2c;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    list-style: none;
+    min-width: 150px;
+    display: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-menu li a:hover{
+    background: #ff2c2c;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.group-nav-icon{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icon{
+    font-size: 18px;
+}
+
+/* =====================
+   HERO IMAGE
+===================== */
+.new-img{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+   
+}
+
+.new-img img{
+    
+    object-fit:fill;
+    filter: brightness(60%);
+}
+
+.body-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #0000008e;
+     border-radius: 10px;
+}
+
+.body-text{
+    top: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.small-title{
+    top: 50%;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* =====================
+   SECTION TITLE
+===================== */
+.main-title{
+    margin: 60px 0 30px;
+    text-align: center;
+}
+
+.title{
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: black;
+    width: 450px;
+}
+
+/* =====================
+   GRID & CARD
+===================== */
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card{
+
+    background:#322f2f;
+    border: 1PX solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.02);
+}
+
+.card-img img{
+    height: 390px;
+    object-fit:fill;
+}
+
+.card-group-title{
+    padding: 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(241, 242, 248);
+}
+
+.card-text{
+    font-size: 22px;
+    color:red;
+}
+.card-display{
+    display:flex;
+}
+.card-number{
+    width: 190px;
+    height: auto;
+    color: rgb(180, 174, 174);
+    
+}
+.card-space{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+footer{
+    margin-top: 80px;
+    background: #000;
+    padding: 30px 0;
+    border-top: 1px solid #222;
+}
+
+footer .contianer{
+    text-align: center;
+    color: #777;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+/* =====================
+   RESPONSIVE CARDS
+===================== */
+@media (max-width: 480px){
+    .body-text{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-nav{
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+
+/*======footer======/*
+/* =====================
+   FOOTER
+===================== */
+.footer{
+    background: linear-gradient(180deg, #000, #0d0d0d);
+    color: #ccc;
+    margin-top: 100px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.footer-logo{
+    font-size: 32px;
+    color: #ff2c2c;
+    margin-bottom: 15px;
+}
+
+.footer-text{
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-col h3{
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 14px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover{
+    color: #ff2c2c;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.footer-social{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a{
+    width: 40px;
+    height: 40px;
+    background: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover{
+    background: #ff2c2c;
+    transform: translateY(-5px);
+}
+
+.footer-social i{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Bottom */
+.footer-bottom{
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .footer-grid{
+        text-align: center;
+    }
+    .footer-social{
+        justify-content: center;
+    }
+}
+/* =====================
+   SWIPER
+===================== */
+.swiper-section{
+    margin: 80px 0;
+}
+
+.mySwiper{
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.swiper-slide img{
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+.swiper-slide:hover img{
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+/* Caption */
+.slide-caption{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+
+/* Navigation */
+.swiper-button-next,
+.swiper-button-prev{
+    color: #ff2c2c;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    transform: scale(1.2);
+}
+
+/* Pagination */
+.swiper-pagination-bullet{
+    background: #aaa;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background: #ff2c2c;
+}
+/*==================  BMW  ===================*/
+
+.body-img img{
+    width: 100%;
+    height: 450px;
+}
+.fa-heart{
+    color:red;
+}
+.body-top{
+    margin-top: 70px;
+}
+.title-bmw{  
+  display: inline-block;
+  border-bottom: 4px solid #ff2f2f;
+  padding-bottom: 3px;
+}
+.row-top{
+    margin-top: 30px;
+}
+.card-title-button{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    margin-top: 75px;
+    height: 25px;
+    padding: 0 25px;
+    background-color: rgb(17, 17, 213);
+    color: white;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: red;
+}
+.card-more{
+    color: blue;
+}
+.card-more:hover{
+  color: red;
+}
+
+/*====================ui================*/
+.edit-section{
+    margin: 60px auto;
+    max-width: 500px;
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.edit-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff2c2c;
+}
+
+#editForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#editForm label{
+    font-size: 14px;
+    color: #ccc;
+}
+
+#editForm input,
+#editForm textarea{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+#editForm button{
+    background: #ff2c2c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#editForm button:hover{
+    background: #ff0000;
+}
+/* ===== Edit Form Section ===== */
+.edit-section {
+    display: none; /* hide by default */
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+.edit-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #061B2D;
+    text-align: center;
+}
+
+.edit-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-section label {
+    font-weight: 600;
+    color: #333;
+}
+
+.edit-section input[type="text"],
+.edit-section input[type="file"],
+.edit-section textarea {
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.edit-section textarea {
+    resize: vertical;
+}
+
+.edit-section button {
+    padding: 12px;
+    background-color: #061B2D;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-section button:hover {
+    background-color: #0d2e4b;
+}
+
+/* Optional: style for success alert */
+.alert-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+/*====================style.button===========*/
+/* ===== ORDER MODAL BACKDROP ===== */
+#orderModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* ===== MODAL BOX ===== */
+#orderModal > div {
+  background: #ffffff;
+  color: #000;
+  width: 90%;
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  font-family: Arial, "Khmer OS", sans-serif;
+}
+
+/* ===== TITLE ===== */
+#orderModal h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: red;
+}
+
+/* ===== INPUTS ===== */
+#orderForm input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+#orderForm input:focus {
+  border-color: #4CAF50;
+}
+
+/* ===== QR TEXT ===== */
+#orderForm p {
+  text-align: center;
+  margin: 15px 0 10px;
+}
+
+/* ===== QR IMAGE ===== */
+#orderForm img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: auto;
+}
+
+/* ===== BUTTONS ===== */
+#orderForm button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Confirm button */
+#orderForm button[type="submit"] {
+  background: #211276;
+  color: #fff;
+}
+
+#orderForm button[type="submit"]:hover {
+  background: #43a047;
+}
+
+/* Close button */
+#orderForm button[type="button"] {
+  background: #f44336;
+  color: #fff;
+}
+
+#orderForm button[type="button"]:hover {
+  background: #e53935;
+}

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div>
+
+                <a href="" class="navbar-brand"><img src="img/c4128a90-28b6-4f9b-90ae-f82cef17b1a5.jpg" alt=""></a>
+                <div class="logo-text">SPK Online Shop</div>
+
+
+            </div>
+
+
+
+            <ul class="navbar-nav">
+                <li><a href=""><i class="fa fa-home"></i></a></li>
+
+                <li class="dropdown">
+                    <a href="">Services▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="toothpaste.html">ថ្នាំដុះធ្មេញ​</a></li>
+                        <li><a href="venta.html">វែនតា</a></li>
+                        <li><a href="shirt.html">អាវរូបអង្គរ</a></li>
+                    </ul>
+                </li>
+                </li>
+
+                <!-- <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li> -->
+                <div class="group-nav-icon">
+                    <a href="" class="nav-icon"><i class="fa-solid fa-bell"></i></a>
+                    <a href="" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <section>
+                <div class="new-img">
+                    <img id="heroImage" src="img/photo_1_2025-12-31_20-24-26.jpg" alt="">
+                    <div id="heroTitle" class="body-title body-text">
+                        សូមស្វាគមន៏មកកាន់ SPK Online Shop ❤️
+                    </div>
+                </div>
+            </section>
+            <a href="#" id="editLink" class="nav-icon">
+                <i class="fa-solid fa-pen-to-square"></i> Edit
+            </a>
+
+            <section class="edit-section" id="editSection" style="display:none;">
+                <h2>កែប្រែ Content</h2>
+
+                <form id="editForm">
+                    <label>ដូររូប</label>
+                    <input type="file" id="imageInput" accept="image/*">
+
+                    <label>ដូរ Title</label>
+                    <input type="text" id="titleInput" placeholder="បញ្ចូល Title ថ្មី">
+                    <!-- 
+        <label>ដូរ Text</label>
+        <textarea id="textInput" rows="4" placeholder="បញ្ចូល Text ថ្មី"></textarea> -->
+
+                    <button type="submit">Update</button>
+                </form>
+            </section>
+            <section>
+                <!-- Edit Card Button -->
+                <a href="#" id="editCardLink" class="nav-icon">
+                    <i class="fa-solid fa-pen-to-square"></i> Edit Cards
+                </a>
+
+
+
+            </section>
+
+            <div class="main-title">
+                <h1 class="title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+            </div>
+
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_1_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ទិប=65000៛ ហ្វ្រីសេវាដឹក
+                                    </div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ','13000៛','100')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_2_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ទិប=65000៛ ហ្វ្រីសេវាដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ','13000៛','1001')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_3_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ដប=65000៛ ហ្វ្រីសេវាដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ','13000៛','3')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_4_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ដប=65000៛ ហ្វ្រីសេវាដឹក</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('','1300៛','4')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_5_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ដប=65000៛ ហ្វ្រីសេវាដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ','13000៛','5')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_6_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">13000៛</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">តម្លៃ 1ទិប=13000៛ +សេវា 6000៛ =19000៛
+                                        តម្លៃ 5ដប=65000៛ ហ្វ្រីសេវាដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ','13000៛','6')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <section class="swiper-section">
+                    <div class="container">
+                        <h1 class="title">FEATURED SUPERCARS</h1>
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_1_2025-12-31_20-24-26.jpg" alt="">
+                                    <div class="slide-caption">Ferrari F80</div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_14_2025-12-31_20-24-26.jpg" alt="">
+                                    <div class="slide-caption">Lamborghini Aventador</div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_14_2025-12-31_20-24-45.jpg" alt="">
+                                    <div class="slide-caption">Lamborghini Aventador</div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_3_2025-12-31_20-24-26.jpg" alt="">
+                                    <div class="slide-caption">Lamborghini Aventador</div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_1_2025-12-31_20-24-45.jpg" alt="">
+                                    <div class="slide-caption">McLaren W1</div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/photo_9_2025-12-31_20-24-26.jpg" alt="">
+                                    <div class="slide-caption">Luxury Supercar</div>
+                                </div>
+
+                            </div>
+
+                            <!-- Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <a href="#" id="editSwiperLink" class="nav-icon">
+                        <i class="fa-solid fa-pen-to-square"></i> Edit Swiper
+                    </a>
+
+
+                </section>
+            </section>
+            <div class="main-title">
+                <h1 class="title">វែនតាប្រែពណ៍ពេលត្រូវពន្លឺ</h1>
+            </div>
+
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_1_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ','15$','100')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_2_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ','15$','101')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_3_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','102')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_4_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','103')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_5_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','104')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_6_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','105')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_7_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','106')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_8_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','107')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_9_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','108')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_10_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','109')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_11_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','110')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_12_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','111')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_13_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','112')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_14_2025-12-31_20-24-45.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">វែនតា ប្រែពណ៍</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">15$</p>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">វែនតា ប្រែពណ៍ពេលត្រូវពន្លឺថ្ងៃ UV420
+                                        តម្លៃ 15$ ហ្វ្រីដឹក</div>
+                                    <div>
+                                        <button class="btn"
+                                            onclick="openOrder('វែនតា ប្រែពណ៍','15$','113')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="main-title">
+                    <h1 class="title">អាវយឺតកមូល</h1>
+                </div>
+            </section>
+
+
+
+
+
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_7_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','1')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_8_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','2')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_9_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','3')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_10_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+                                    </div>
+
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','4')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_11_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="">
+                                        <p class="card-text">5$</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','5')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img"> <img src="img/photo_12_2025-12-31_20-24-26.jpg" alt=""></div>
+                            <div class="card-group-title">
+                                <div class="card-title-button">
+                                    <h1 class="card-title">អាវយឺតកមូល</h1>
+                                    <div class="card-display">
+                                        <p class="card-text">5$</p>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="card-space">
+                                    <div class="card-number">
+                                        1=5$ សេវា 1.50$
+                                        2=10$ សេវា 1.50$
+                                        3=15$ សេវា 1.50$
+                                        5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                    <div>
+                                        <button class="btn" onclick="openOrder('អាវយឺតកមូល','5$','6')">ទិញឥឡូវ</button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="main-title">
+                    <h1 class="title">អាវកបើក </h1>
+                </div>
+            </section>
+            <section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_13_2025-12-31_20-24-26.jpg" alt="">
+                                </div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn" onclick="openOrder('អាវកបើក','8$','7')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_14_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn" onclick="openOrder('អាវកបើក','8$','8')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_16_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn" onclick="openOrder('អាវកបើក','8$','9')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_15_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title"></h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn"
+                                                onclick="openOrder('អាវកបើក','8$','10')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_17_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn"
+                                                onclick="openOrder('អាវកបើក','8$','11')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_18_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn"
+                                                onclick="openOrder('អាវកបើក','8$','12')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_19_2025-12-31_20-24-26.jpg" alt="">
+                                </div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="card-display">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn"
+                                                onclick="openOrder('អាវកបើក','8$','13')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-img"> <img src="img/photo_20_2025-12-31_20-24-26.jpg" alt=""></div>
+                                <div class="card-group-title">
+                                    <div class="card-title-button">
+                                        <h1 class="card-title">អាវកបើក</h1>
+                                        <div class="">
+                                            <p class="card-text">8$</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-space">
+                                        <div class="card-number">
+                                            1=5$ សេវា 1.50$
+                                            2=10$ សេវា 1.50$
+                                            3=15$ សេវា 1.50$
+                                            5=25$ ហ្វ្រីសេវាដឹក គ្រប់ខេត្តក្រុង</div>
+                                        <div>
+                                            <button class="btn"
+                                                onclick="openOrder('អាវកបើក','8$','14')">ទិញឥឡូវ</button>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+
+        </div>
+        ​​​​<!-- ORDER MODAL -->
+        <div id="orderModal" style="display:none; position:fixed; inset:0; background:#000000aa; z-index:999;">
+            <div
+                style="background:#406b8a; color:#000; width:350px; margin:80px auto; padding:20px; border-radius:10px;">
+
+                <h3>បញ្ជាទិញ</h3>
+
+                <form id="orderForm">
+                    <input type="text" id="cusName" placeholder="ឈ្មោះ" required><br><br>
+                    <input type="tel" id="cusPhone" placeholder="លេខទូរស័ព្ទ" required><br><br>
+                    <input type="text" id="cusAddress" placeholder="ទីតាំង" required>
+
+                    <p><b>👉ស្កេន QR ដេីម្បីទាក់ទងជាមួយខ្ញុំផ្ទាល់​😍</b></p>
+                    <img src="img/photo_2026-01-01_13-47-39.jpg" style="width:36%; height:110px; border-radius: 10px;">
+                    <br>
+                    <button type="submit">បញ្ជាក់ការបញ្ជាទិញ</button>
+                    <button type="button" onclick="closeOrder()">បិទ</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Logo & About -->
+            <div class="footer-col">
+                <h2 class="footer-logo">CMD</h2>
+                <p class="footer-text">
+                   SPK Online Shop គឺជា Website បង្ហាញអំពីសម្ភារះទំនើបទាន់សម័យ
+                    ដែលរួមបញ្ចូលបច្ចេកវិទ្យា និងការរចនាថ្មីៗ។
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Number Phone</h3>
+                <ul>
+                    <p>086707472</p>
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div class="footer-col">
+                <h3>Brands</h3>
+                <ul>
+                    <li><a href="">ទំព័រដេីម</a></li>
+                    <li><a href="toothpaste.html">ថ្នាំដុះធ្មេញ​ ខ្មែរអង្គរ</a></li>
+                    <li><a href="venta.html">វែនតា</a></li>
+                    <li><a href="shirt.html">អាវរូបអង្គរ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://web.facebook.com/people/Sao-Seang/100071588717404/"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://t.me/Sao_LaiXeang"><i class="fab fa-telegram"></i>
+                        </i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SPK Online Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
+
+
+<script>
+    function openOrder() {
+        document.getElementById("orderModal").style.display = "block";
+    }
+</script>
+<script>
+    function openOrder(name, price, code) {
+        selectedProduct.name = name;
+        selectedProduct.price = price;
+        selectedProduct.code = code;
+
+        document.getElementById("orderModal").style.display = "block";
+    }
+
+    function closeOrder() {
+        document.getElementById("orderModal").style.display = "none";
+    }
+</script>
+
+<script>
+      const BOT_TOKEN = "8392779883:AAFj_XNRXzcktAvVUBhGC31xjTtATVASyN8";
+    const CHAT_ID = "1665388360";
+
+    const orderForm = document.getElementById("orderForm");
+    const cusName = document.getElementById("cusName");
+    const cusPhone = document.getElementById("cusPhone");
+    const cusAddress = document.getElementById("cusAddress");
+
+    orderForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const message =
+            `📦 ការបញ្ជាទិញថ្មី
+🚗 ទំនិញ: ${selectedProduct.name}
+💰 តម្លៃ: ${selectedProduct.price}
+🔢 លេខ Card: ${selectedProduct.code}
+
+👤 ឈ្មោះ: ${cusName.value}
+📞 ទូរស័ព្ទ: ${cusPhone.value}
+📍 ទីតាំង: ${cusAddress.value}`;
+
+
+        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: message
+            })
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.ok) {
+                    alert("បញ្ជាទិញជោគជ័យ ✅\nសារបានផ្ញើទៅ Telegram");
+                    closeOrder();
+                    orderForm.reset();
+                } else {
+                    alert("Telegram Error ❌");
+                    console.log(data);
+                }
+            })
+            .catch(err => {
+                alert("Network Error ❌");
+                console.error(err);
+            });
+    });
+</script>
+
+<script>
+    let selectedProduct = {
+        name: "",
+        price: "",
+        code: ""
+    };
+</script>
+
+</html>
